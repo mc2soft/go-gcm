@@ -112,7 +112,7 @@ type HttpResponse struct {
 	Failure      uint     `json:"failure,omitempty"`
 	CanonicalIds uint     `json:"canonical_ids,omitempty"`
 	Results      []Result `json:"results,omitempty"`
-	MessageId    int     `json:"message_id,omitempty"`
+	MessageId    int      `json:"message_id,omitempty"`
 	Error        string   `json:"error,omitempty"`
 }
 
@@ -146,6 +146,8 @@ type Data map[string]interface{}
 type Notification struct {
 	Title        string `json:"title,omitempty"`
 	Body         string `json:"body,omitempty"`
+	Link         string `json:"link,omitempty"`
+	Image        string `json:"image,omitempty"`
 	Icon         string `json:"icon,omitempty"`
 	Sound        string `json:"sound,omitempty"`
 	Badge        string `json:"badge,omitempty"`
